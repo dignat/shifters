@@ -74,6 +74,9 @@
 
 <md-dialog :md-active.sync="mapVisible">
   <div class="md-layout-item">
+    <md-field>
+      <p>Please double click on the map to select a location.</p>
+    </md-field>
 
       <div style="width: 500px;height:500px;">
         <Map v-model="location" :key="key" />
@@ -85,6 +88,9 @@
 </md-dialog>
 <md-dialog :md-active.sync="mapDropUpVisibility">
   <div class="md-layout-item">
+    <md-field>
+      <p>Please double click on the map to select a location.</p>
+    </md-field>
       <div style="width:500px;height:500px;">
         <Map v-model="dropLocation" :key="key" />
       </div>
